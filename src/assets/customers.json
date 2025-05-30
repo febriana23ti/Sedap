@@ -1,0 +1,213 @@
+[
+    {
+      "customerId": "CUST001",
+      "customerName": "Alice Johnson",
+      "email": "alice.johnson@gmail.com",
+      "phone": "081234567001",
+      "loyalty": "Gold"
+    },
+    {
+      "customerId": "CUST002",
+      "customerName": "Brian Lee",
+      "email": "brian.lee@yahoo.com",
+      "phone": "081234567002",
+      "loyalty": "Silver"
+    },
+    {
+      "customerId": "CUST003",
+      "customerName": "Catherine Zhao",
+      "email": "catherine.zhao@ymail.com",
+      "phone": "081234567003",
+      "loyalty": "Bronze"
+    },
+    {
+      "customerId": "CUST004",
+      "customerName": "Daniel Smith",
+      "email": "daniel.smith@gmail.com",
+      "phone": "081234567004",
+      "loyalty": "Gold"
+    },
+    {
+      "customerId": "CUST005",
+      "customerName": "Emily Davis",
+      "email": "emily.davis@outlook.com",
+      "phone": "081234567005",
+      "loyalty": "Silver"
+    },
+    {
+      "customerId": "CUST006",
+      "customerName": "Franklin Miles",
+      "email": "franklin.miles@live.com",
+      "phone": "081234567006",
+      "loyalty": "Bronze"
+    },
+    {
+      "customerId": "CUST007",
+      "customerName": "Grace Park",
+      "email": "grace.park@icloud.com",
+      "phone": "081234567007",
+      "loyalty": "Gold"
+    },
+    {
+      "customerId": "CUST008",
+      "customerName": "Hannah Kim",
+      "email": "hannah.kim@mail.com",
+      "phone": "081234567008",
+      "loyalty": "Silver"
+    },
+    {
+      "customerId": "CUST009",
+      "customerName": "Ian Wright",
+      "email": "ian.wright@gmail.com",
+      "phone": "081234567009",
+      "loyalty": "Bronze"
+    },
+    {
+      "customerId": "CUST010",
+      "customerName": "Julia Moore",
+      "email": "julia.moore@ymail.com",
+      "phone": "081234567010",
+      "loyalty": "Gold"
+    },
+    {
+      "customerId": "CUST011",
+      "customerName": "Kevin Tran",
+      "email": "kevin.tran@yahoo.com",
+      "phone": "081234567011",
+      "loyalty": "Silver"
+    },
+    {
+      "customerId": "CUST012",
+      "customerName": "Lily Chen",
+      "email": "lily.chen@outlook.com",
+      "phone": "081234567012",
+      "loyalty": "Bronze"
+    },
+    {
+      "customerId": "CUST013",
+      "customerName": "Marcus Brown",
+      "email": "marcus.brown@live.com",
+      "phone": "081234567013",
+      "loyalty": "Gold"
+    },
+    {
+      "customerId": "CUST014",
+      "customerName": "Natalie Green",
+      "email": "natalie.green@gmail.com",
+      "phone": "081234567014",
+      "loyalty": "Silver"
+    },
+    {
+      "customerId": "CUST015",
+      "customerName": "Oliver Scott",
+      "email": "oliver.scott@icloud.com",
+      "phone": "081234567015",
+      "loyalty": "Bronze"
+    },
+    {
+      "customerId": "CUST016",
+      "customerName": "Penelope Carter",
+      "email": "penelope.carter@icloud.com",
+      "phone": "081234567016",
+      "loyalty": "Gold"
+    },
+    {
+      "customerId": "CUST017",
+      "customerName": "Quincy Allen",
+      "email": "quincy.allen@live.com",
+      "phone": "081234567017",
+      "loyalty": "Silver"
+    },
+    {
+      "customerId": "CUST018",
+      "customerName": "Rachel Adams",
+      "email": "rachel.adams@gmail.com",
+      "phone": "081234567018",
+      "loyalty": "Bronze"
+    },
+    {
+      "customerId": "CUST019",
+      "customerName": "Samuel Rivera",
+      "email": "samuel.rivera@outlook.com",
+      "phone": "081234567019",
+      "loyalty": "Gold"
+    },
+    {
+      "customerId": "CUST020",
+      "customerName": "Tina Mendoza",
+      "email": "tina.mendoza@live.com",
+      "phone": "081234567020",
+      "loyalty": "Silver"
+    },
+    {
+      "customerId": "CUST021",
+      "customerName": "Ursula Nguyen",
+      "email": "ursula.nguyen@outlook.com",
+      "phone": "081234567021",
+      "loyalty": "Bronze"
+    },
+    {
+      "customerId": "CUST022",
+      "customerName": "Victor Reyes",
+      "email": "victor.reyes@gmail.com",
+      "phone": "081234567022",
+      "loyalty": "Gold"
+    },
+    {
+      "customerId": "CUST023",
+      "customerName": "Wendy Zhang",
+      "email": "wendy.zhang@gmail.com",
+      "phone": "081234567023",
+      "loyalty": "Silver"
+    },
+    {
+      "customerId": "CUST024",
+      "customerName": "Xander Liu",
+      "email": "xander.liu@outlook.com",
+      "phone": "081234567024",
+      "loyalty": "Bronze"
+    },
+    {
+      "customerId": "CUST025",
+      "customerName": "Yasmine El-Hassan",
+      "email": "yasmine.hassan@mail.com",
+      "phone": "081234567025",
+      "loyalty": "Gold"
+    },
+    {
+      "customerId": "CUST026",
+      "customerName": "Zachary Morgan",
+      "email": "zachary.morgan@mail.com",
+      "phone": "081234567026",
+      "loyalty": "Silver"
+    },
+    {
+      "customerId": "CUST027",
+      "customerName": "Amber Frost",
+      "email": "amber.frost@icloud.com",
+      "phone": "081234567027",
+      "loyalty": "Bronze"
+    },
+    {
+      "customerId": "CUST028",
+      "customerName": "Benjamin Yu",
+      "email": "benjamin.yu@icloud.com",
+      "phone": "081234567028",
+      "loyalty": "Gold"
+    },
+    {
+      "customerId": "CUST029",
+      "customerName": "Clara Knight",
+      "email": "clara.knight@yahoo.com",
+      "phone": "081234567029",
+      "loyalty": "Silver"
+    },
+    {
+      "customerId": "CUST030",
+      "customerName": "Derek Wu",
+      "email": "derek.wu@gmail.com",
+      "phone": "081234567030",
+      "loyalty": "Bronze"
+    }
+  ]
+  

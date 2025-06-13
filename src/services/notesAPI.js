@@ -23,4 +23,9 @@ export const notesAPI = {
     async deleteNote(id) {
         await axios.delete(`${API_URL}?id=eq.${id}`, { headers })
     },
+
+    async updateNote(id, updateNote) {
+        const response = await axios.patch(`${API_URL}?id=eq.${id}`, updateNote, { headers })
+        return response.data
+    },
 }

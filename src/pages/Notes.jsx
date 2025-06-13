@@ -1,3 +1,4 @@
+import { AiFillEdit } from "react-icons/ai"; 
 import { notesAPI } from "../services/notesAPI"
 import PageHeader from "../components/PageHeader";
 import { useState, useEffect } from "react";
@@ -12,6 +13,8 @@ export default function Notes() {
     const [error, setError] = useState("")
     const [success, setSuccess] = useState("")
     const [notes, setNotes] = useState([])
+    const [isEditMode, setIsEditMode] = useState(false)
+    const [editId, setEditId] = useState(null)
     
     const [dataForm, setDataForm] = useState({
         title: "", content: "", status: ""
@@ -26,7 +29,7 @@ export default function Notes() {
         })
     }
 
-    // Handle form submission for creating notes
+    // Handle form submission for creating notes and updating notes 
     const handleSubmit = async (e) => {
         e.preventDefault()
 
@@ -35,16 +38,21 @@ export default function Notes() {
             setError("")
             setSuccess("")
 
-            await notesAPI.createNote(dataForm)
+            if (isEditMode) {
+                await notesAPI.updateNote(editId, dataForm)
+                setSuccess("Catatan berhasil diperbarui!")
+            } else {
+                await notesAPI.createNote(dataForm)
+                setSuccess("Catatan berhasil ditambahkan!")
+            }
 
-            setSuccess("Catatan berhasil ditambahkan!")
+            setDataForm({ title: "", content: "", status: "" })
+            setEditId(null)
+            setIsEditMode(false)
 
-            // Kosongkan Form setelah Success
-            setDataForm({ title: "", content: "", status:"" })
-
-            // Hilangkan pesan Success setelah 3 detik
+            loadNotes()
             setTimeout(() => setSuccess(""), 3000)
-            
+
         } catch (err) {
             setError(`Terjadi kesalahan: ${err.message}`);
         } finally {
@@ -91,6 +99,19 @@ export default function Notes() {
         } finally {
             setLoading(false)
         }
+    }
+
+    const handleEdit = async (id) => {
+        const noteToEdit = notes.find(note => note.id === id)
+        if (!noteToEdit) return
+
+        setDataForm({
+            title: noteToEdit.title,
+            content: noteToEdit.content,
+            status: noteToEdit.status || ""
+        })
+        setEditId(id)
+        setIsEditMode(true)
     }
 
     return (
@@ -207,6 +228,12 @@ export default function Notes() {
                                                 disabled={loading}
                                             >
                                                 <AiFillDelete className="text-red-400 text-2xl hover:text-red-600 transition-colors" />
+                                            </button>
+                                            <button
+                                                onClick={() => handleEdit(note.id)}
+                                                disabled={loading}
+                                            >
+                                                <AiFillEdit className="text-green-400 text-2xl hover:text-green-600 transition-colors"/>
                                             </button>
                                         </div>
                                     </td>

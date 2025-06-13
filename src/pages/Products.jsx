@@ -14,7 +14,7 @@ export default function Products() {
     useEffect(() => {
         const timeout = setTimeout(() => {
             axios
-                .get(`https://dummyjson.com/products/search?q=${query}`) // menerapkan search dan query param
+                .get(`https://dummyjson.com/products/search?q=${query}`) // menerapkan search dan query parameter
                 .then((response) => {
                     if (response.status !== 200) {
                         setError(response.data.message);

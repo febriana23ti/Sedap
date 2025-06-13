@@ -22,6 +22,7 @@ const FormCust = React.lazy(() => import("./pages/FormCust"))
 const Orders = React.lazy(() => import("./pages/Orders"))
 const FormOrders = React.lazy(() => import("./pages/FormOrders"))
 const Users = React.lazy(() => import("./pages/Users"))
+const Notes = React.lazy(() => import("./pages/Notes"))
 const Error400 = React.lazy(() => import("./pages/Error400"))
 const Error401 = React.lazy(() => import("./pages/Error401"))
 const Error403 = React.lazy(() => import("./pages/Error403"))
@@ -52,6 +53,7 @@ function App() {
                     <Route path="/aboutSedap" element={<Error400 />} />
                     <Route path="/transport" element={<Error401 />} />
                     <Route path="/admin" element={<Error403 />} />
+                    <Route path="/notes" element={<Notes />} />
                 </Route>
 
                 <Route element={<AuthLayout/>}>

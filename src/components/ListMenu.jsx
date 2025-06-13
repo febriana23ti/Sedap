@@ -70,6 +70,12 @@ export default function ListMenu() {
               <span>Admin</span>
             </NavLink>
           </li>
+          <li>
+            <NavLink id="menu-9" to="/notes" className={menuClass}>
+              <TbDeviceDesktopAnalytics className="mr-4 text-xl" />
+              <span>Notes</span>
+            </NavLink>
+          </li>
         </ul>
       </div>
     </nav>
